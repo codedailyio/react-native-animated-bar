@@ -1,0 +1,25 @@
+{
+  "name": "react-native-animated-bar",
+  "version": "0.1.0",
+  "description": "React Native Animated Progress Bar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/codedailyio/react-native-animated-bar.git"
+  },
+  "keywords": [
+    "react-native",
+    "animated",
+    "progress",
+    "bar"
+  ],
+  "author": "Jason Brown",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codedailyio/react-native-animated-bar/issues"
+  },
+  "homepage": "https://github.com/codedailyio/react-native-animated-bar#readme"
+}
