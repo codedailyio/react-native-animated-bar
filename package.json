@@ -1,7 +1,7 @@
 {
   "name": "react-native-animated-bar",
   "version": "0.1.0",
-  "description": "React Native Animated Progress Bar",
+  "description": "Responsive React Native Animated Progress Bar",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/codedailyio/react-native-animated-bar/issues"
   },
-  "homepage": "https://github.com/codedailyio/react-native-animated-bar#readme"
+  "homepage": "https://github.com/codedailyio/react-native-animated-bar#readme",
+  "devDependencies": {
+    "react": "^16.0.0-alpha.12",
+    "react-native": "*"
+  }
 }
