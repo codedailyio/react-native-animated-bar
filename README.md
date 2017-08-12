@@ -18,7 +18,9 @@ yarn add react-native-animated-bar
 * `fillColor` - Configures color behind progress bar. Default: `rgba(0,0,0,.5)`.
 * `duration` - Configures length of time in milliseconds the change in progress should take. Default: `100`.
 * `animate` - Configures whether or not change in progress should be animated. Default: `true`
+* `onAnimate` - Callback listener for the animated value. Default: `undefined`
 
+Any color above can be an animated interpolated value
 
 ## Example Usage
 
