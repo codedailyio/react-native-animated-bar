@@ -3,7 +3,7 @@
 ## Install
 
 ```
-npm install react-native-animated-bar
+npm install react-native-animated-bar --save
 
 yarn add react-native-animated-bar
 ```
@@ -117,6 +117,24 @@ export default class example extends Component {
             animate={false}
           />
         </View>
+        <View>
+          <Text>Auto Sizing in a Column</Text>
+          <AnimatedBar
+            progress={this.state.progress}
+            height={null}
+            borderColor="#DDD"
+            barColor="tomato"
+            borderRadius={5}
+            borderWidth={5}
+            duration={500}
+          >
+            <View style={[styles.row, styles.center]}>
+              <Text style={[styles.barText, { fontSize: 30 }]}>
+                {Math.round(this.state.progress * 100)}%
+              </Text>
+            </View>
+          </AnimatedBar>
+        </View>
 
         <View>
           <Text>Longer duration on transition</Text>
@@ -198,4 +216,5 @@ const styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent("example", () => example);
+
 ```
