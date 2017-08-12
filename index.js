@@ -65,9 +65,9 @@ class AnimatedBar extends Component {
     } = this.props;
 
     return (
-      <View style={[styles.outer, { height }, row ? styles.flex : undefined, style]}>
-        <View style={[styles.flex, { borderColor, borderWidth, borderRadius }]}>
-          <View style={[StyleSheet.absoluteFill, { backgroundColor: fillColor }]} />
+      <Animated.View style={[styles.outer, { height }, row ? styles.flex : undefined, style]}>
+        <Animated.View style={[styles.flex, { borderColor, borderWidth, borderRadius }]}>
+          <Animated.View style={[StyleSheet.absoluteFill, { backgroundColor: fillColor }]} />
           <Animated.View
             style={[
               styles.bar,
@@ -78,8 +78,8 @@ class AnimatedBar extends Component {
             ]}
           />
           {children}
-        </View>
-      </View>
+        </Animated.View>
+      </Animated.View>
     );
   }
 }
