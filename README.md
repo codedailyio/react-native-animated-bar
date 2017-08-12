@@ -22,6 +22,8 @@ yarn add react-native-animated-bar
 
 Any color above can be an animated interpolated value
 
+![](./bars.gif)
+
 ## Example Usage
 
 ```js
