@@ -8,6 +8,10 @@ npm install react-native-animated-bar --save
 yarn add react-native-animated-bar
 ```
 
+## Live Demo
+
+[https://snack.expo.io/Hk03E4Avb](https://snack.expo.io/Hk03E4Avb)
+
 ## Configuration Options
 
 * `height` - Configure the height. Default: `10`. AutoSize height of bar set to null (`height={null}`)
