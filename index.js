@@ -62,12 +62,17 @@ class AnimatedBar extends Component {
       fillColor,
       row,
       style,
+      wrapStyle,
+      fillStyle,
+      barStyle,
     } = this.props;
 
     return (
       <Animated.View style={[styles.outer, { height }, row ? styles.flex : undefined, style]}>
-        <Animated.View style={[styles.flex, { borderColor, borderWidth, borderRadius }]}>
-          <Animated.View style={[StyleSheet.absoluteFill, { backgroundColor: fillColor }]} />
+        <Animated.View style={[styles.flex, { borderColor, borderWidth, borderRadius }, wrapStyle]}>
+          <Animated.View
+            style={[StyleSheet.absoluteFill, { backgroundColor: fillColor }, fillStyle]}
+          />
           <Animated.View
             style={[
               styles.bar,
@@ -75,6 +80,7 @@ class AnimatedBar extends Component {
                 width: this.widthInterpolate,
                 backgroundColor: barColor,
               },
+              barStyle,
             ]}
           />
           {children}

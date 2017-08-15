@@ -23,6 +23,10 @@ yarn add react-native-animated-bar
 * `duration` - Configures length of time in milliseconds the change in progress should take. Default: `100`.
 * `animate` - Configures whether or not change in progress should be animated. Default: `true`
 * `onAnimate` - Callback listener for the animated value. Default: `undefined`
+* `style` - Pass in any styling for the outer containing view. This defines the general layout of the bar for column, row, and the `height` prop.
+* `wrapStyle` - Add arbitrary styling to the wrapping view. This is where `borderColor`, `borderWidth`, and `borderRadius` stylings are applied.
+* `fillStyle` - Add arbitrary styling to inner fill(behind the bar), this is what `fillColor` is applied to.
+* `barStyle` - Add arbitrary styling to the bar, this si what `barColor` is applied to.
 
 Any color above can be an animated interpolated value
 
